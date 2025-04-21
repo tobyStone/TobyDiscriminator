@@ -20,6 +20,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # CUDA check
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 logging.info(f'Training on {device}')
+logging.info(f'Still, training...')
 
 # Character-level dataset
 class DiscriminatorDataset(Dataset):
